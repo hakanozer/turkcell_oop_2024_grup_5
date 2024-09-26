@@ -3,16 +3,24 @@ package inheritance;
 public class A extends Base {
 
     public A() {
-        System.out.println("A constructor");
+        super(100);
+        System.out.println("A constructor :" + number);
     }
 
     public int sum(int a, int b) {
-        return a + b;
+        int sm = a + b;
+        if (sm > 50) {
+            write();
+        }else {
+            super.write();
+        }
+        return sm;
     }
 
     @Override
     public void write() {
         read("A write method");
     }
+    
 
 }
