@@ -63,10 +63,25 @@ public class MainArrayList {
         System.out.println(contains);
 
 
-
-
         System.out.println(ls);
         System.out.println(arr);
+
+        System.out.println("=================");
+        ArrayList<Product> products = new ArrayList<>();
+
+        Product p1 = new Product(100, "TV", "TV Detail", 20000);
+        Product p2 = new Product(101, "Tablet", "Tablet Detail", 30000);
+        Product p3 = new Product(102, "iPhone", "iPhone Detail", 40000);
+
+        products.add(p1);
+        products.add(p1);
+        products.add(p2);
+        products.add(p2);
+        products.add(p2);
+        products.add(p3);
+        products.add(p3);
+
+        System.out.println(products);
 
     }
 }
